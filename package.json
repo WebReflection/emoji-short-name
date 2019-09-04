@@ -1,0 +1,25 @@
+{
+  "name": "emoji-short-name",
+  "version": "0.0.0",
+  "description": "An `{emoji: 'Short Name'}` dictionary directly from https://unicode.org/",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "unpkg": "index.js",
+  "scripts": {
+    "build": "electron build.js && npm run cjs && npm run esm && npm test",
+    "cjs": "cp index.js cjs/index.js && echo 'module.exports = emojiShortName;' >> cjs/index.js",
+    "esm": "cp index.js esm/index.js && echo 'export default emojiShortName;' >> esm/index.js",
+    "test": "node -e 'require(`.`)[`🎉`] == `party popper` || process.exit(1)'"
+  },
+  "keywords": [
+    "emoji",
+    "name",
+    "description",
+    "unicode"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.7"
+  }
+}
