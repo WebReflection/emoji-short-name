@@ -17,7 +17,7 @@ app.on('ready', () => {
         for (const code of document.querySelectorAll('td.code')) {
           const text = code.textContent.trim();
           const unicode = text.replace(/U\\+/g, '0x').replace(/[\\s\\n\\r\\f]+/g, ', ');
-          const key = eval("String.fromCodePoint(" + unicode + ")");
+          const key = eval('String.fromCodePoint(' + unicode + ')');
           emoji[key] = code.parentElement.lastElementChild.textContent.trim();
         }
         return emoji;
