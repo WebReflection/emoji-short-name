@@ -6,7 +6,7 @@
   "module": "esm/index.js",
   "unpkg": "index.js",
   "scripts": {
-    "build": "node build.js && npm run cjs && npm run esm && npm test",
+    "build": "npm i emoji-essential@latest && node build.js && npm run cjs && npm run esm && npm test",
     "cjs": "cp index.js cjs/index.js && echo 'module.exports = emojiShortName;' >> cjs/index.js",
     "esm": "cp index.js esm/index.js && echo 'export default emojiShortName;' >> esm/index.js",
     "test": "node -e 'require(`.`)[`🎉`] == `party popper` || process.exit(1)'"
@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/WebReflection/emoji-short-name#readme",
   "devDependencies": {
-    "emoji-essential": "latest"
+    "emoji-essential": "^0.1.3"
   }
 }
