@@ -19,9 +19,6 @@
   ],
   "author": "Andrea Giammarchi",
   "license": "ISC",
-  "dependencies": {
-    "emoji-essential": "latest"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WebReflection/emoji-short-name.git"
@@ -29,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/WebReflection/emoji-short-name/issues"
   },
-  "homepage": "https://github.com/WebReflection/emoji-short-name#readme"
+  "homepage": "https://github.com/WebReflection/emoji-short-name#readme",
+  "devDependencies": {
+    "emoji-essential": "latest"
+  }
 }
