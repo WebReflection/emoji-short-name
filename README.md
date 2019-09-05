@@ -1,6 +1,6 @@
 # emoji-short-name
 
-An `{emoji: 'Short Name'}` dictionary directly from https://unicode.org/
+An `{emoji: 'Short Name'}` dictionary via [emoji-essential](https://github.com/WebReflection/emoji-essential).
 
 ```js
 import emojiShortName from 'emoji-short-name';
