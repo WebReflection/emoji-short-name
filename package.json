@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/WebReflection/emoji-short-name#readme",
   "devDependencies": {
-    "emoji-essential": "^1.0.0"
+    "emoji-essential": "^2.0.0"
   }
 }
