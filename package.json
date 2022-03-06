@@ -1,6 +1,6 @@
 {
   "name": "emoji-short-name",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An `{emoji: 'Short Name'}` dictionary directly from https://unicode.org/",
   "main": "cjs/index.js",
   "module": "esm/index.js",
